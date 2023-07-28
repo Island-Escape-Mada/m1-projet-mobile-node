@@ -7,6 +7,8 @@ const router = express.Router();
 router.post("/register", async (req, res) => {
 	try {
 		const { username, password } = req.body;
+		console.log(req.body);
+		console.log(username + " / " + password);
 
 		// Check if the username already exists
 		const existingUser = await User.findOne({ username });
@@ -15,10 +17,11 @@ router.post("/register", async (req, res) => {
 		}
 
 		// Hash the password before saving it to the database
-		const hashedPassword = await bcrypt.hash(password, 10);
+		// const hashedPassword = await bcrypt.hash(password, 10);
 
 		// Create a new user in the database
-		const newUser = new User({ username, password: hashedPassword });
+		// const newUser = new User({ username, password: hashedPassword });
+		const newUser = new User({ username, password });
 		await newUser.save();
 
 		res.status(201).json({ message: "Registration successful" });
@@ -30,6 +33,8 @@ router.post("/register", async (req, res) => {
 router.post("/login", async (req, res) => {
 	try {
 		const { username, password } = req.body;
+		console.log(req.body);
+		console.log(username + " / " + password);
 
 		// Find the user in the database
 		const user = await User.findOne({ username });
@@ -38,8 +43,8 @@ router.post("/login", async (req, res) => {
 		}
 
 		// Compare the password with the hashed password in the database
-		const isPasswordValid = await bcrypt.compare(password, user.password);
-		if (!isPasswordValid) {
+		// const isPasswordValid = await bcrypt.compare(password, user.password);
+		if (password !== user.password) {
 			return res.status(401).json({ message: "Invalid username or password" });
 		}
 

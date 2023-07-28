@@ -2,7 +2,8 @@ require("dotenv").config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
+const cors = require("cors");
 const mongoString = process.env.DATABASE_URL;
 
 const authRoutes = require("./routes/auth");
@@ -20,7 +21,9 @@ database.once("connected", () => {
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 
