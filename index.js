@@ -10,6 +10,7 @@ const dbConfig = require("./configs/db.config");
 // routes
 const authRoutes = require("./routes/auth");
 const aboutmadaRouter = require("./routes/aboutmada");
+const infolist = require("./routes/infolist");
 const cors = require("cors");
 app.use(cors());
 
@@ -49,6 +50,7 @@ db.mongoose
 // routes
 app.use("/api/auth", authRoutes);
 app.use(aboutmadaRouter);
+app.use(infolist);
 
 const port = process.env.PORT || 4000; 
 app.listen(port, () => {

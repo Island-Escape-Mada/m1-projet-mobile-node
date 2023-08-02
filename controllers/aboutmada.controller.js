@@ -2,7 +2,7 @@ const db = require('../models');
 
 const BasicInfo = db.BasicInfo;
 
-const htmlheader = `
+var htmlheader = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +48,7 @@ const htmlheader = `
 </head>
 `;
 
-const htmlFooter = `
+var htmlFooter = `
     </html>
 `;
 
@@ -70,6 +70,7 @@ const getAboutMadaInfo = (req, res) => {
                             <div class="card">`
                 htmlBody += "<h2>" + info[i].title + "</h2>";
                 htmlBody += `<p class="info">` + info[i].value + `</p>
+                    <button class="btn btn-primary">Test</button>
                         </div>
                     </div>
                     </div>

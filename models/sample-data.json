@@ -30,3 +30,21 @@
     "value": "Madagascar, the fourth largest island in the world, offers diverse landscapes, stunning beaches, unique wildlife, and rich cultural heritage. Come and experience an unforgettable adventure in this exotic paradise!",
     "rank": 0
 }
+
+{ "Info type": "Basic info" }
+
+{
+    "infoType": "beach",
+    "mainImage": "Image1.png",
+    "title": "Antsanitia",
+    "location": "Antsiranana",
+    "shortDescription": "Take away your stress at Antsanitia Beach"
+}
+
+{
+    "infoType": "beach",
+    "mainImage": "Image2.png",
+    "title": "Grand Pavoi",
+    "location": "Mahajanga",
+    "shortDescription": "Enjoy your holiday in this sunny place"
+}
