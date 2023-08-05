@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 
 const express = require("express");
 const app = express();
@@ -19,40 +19,40 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
 	cookieSession({
-	  name: "mean-session",
-	  secret: "@meansecret-token!",
-	  httpOnly: true
+		name: "mean-session",
+		secret: "@meansecret-token!",
+		httpOnly: true,
 	})
-  );
-  
-  app.all("/*", function(req, res, next){
-	res.header('Access-Control-Allow-Origin', '*');
-	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+);
+
+app.all("/*", function (req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE,OPTIONS");
+	res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, Content-Length, X-Requested-With");
 	next();
-  });
+});
 
 const mongoString = process.env.DATABASE_URL || dbConfig.CONNECTION;
 const db = require("./models");
 db.mongoose
-  .connect(mongoString, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log("Connected to mongo DB.");
-  })
-  .catch(err => {
-    console.error("Connection error", err);
-    process.exit();
-  });
+	.connect(mongoString, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => {
+		console.log("Connected to mongo DB.");
+	})
+	.catch((err) => {
+		console.error("Connection error", err);
+		process.exit();
+	});
 
 // routes
 app.use("/api/auth", authRoutes);
 app.use(aboutmadaRouter);
 app.use(infolist);
 
-const port = process.env.PORT || 4000; 
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
 	console.log(`Server Started at ${port}`);
 });
