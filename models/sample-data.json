@@ -48,3 +48,19 @@
     "location": "Mahajanga",
     "shortDescription": "Enjoy your holiday in this sunny place"
 }
+
+{
+    "infoType": "beach",
+    "mainImage": "Image3.png",
+    "title": "Foulpoint",
+    "location": "Toamasina",
+    "shortDescription": "Enjoy your holiday in this sunny place"
+}
+
+{
+    "infoType": "beach",
+    "mainImage": "Image4.png",
+    "title": "Ambilalemaitso",
+    "location": "Ambila",
+    "shortDescription": "Enjoy your holiday in this sunny place"
+}

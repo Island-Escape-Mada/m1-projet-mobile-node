@@ -8,9 +8,10 @@ var htmlheader = `
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Madagascar Beaches</title>
+  <title></title>
   <!-- Link Bootstrap CSS from a CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="js/jquery.min.js"></script>
   <style>
     body {
       background-color: #f8f9fa;
@@ -48,11 +49,68 @@ var htmlheader = `
       font-size: 16px;
       color: #333;
     }
+    .welcome {
+
+      height:220px;
+  
+      width:100%;
+  
+      background-color:rgba(255, 255, 0, 0.3);
+  
+  }
+  
+  .content {
+
+      margin-top:230px;
+      height:800px;
+  
+  }
+  
+  .stick {
+  
+      position:fixed;
+  
+      top:0px;
+  
+  }
+  
   </style>
 </head>
 `;
 
 var htmlFooter = `
+    <script>
+      function loadAPIContent(apiUrl) {
+        console.log("Click");
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("beach-card").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", apiUrl, true);
+        xmlhttp.send();
+      }
+    </script>
+    <script>
+      $(window).scroll(function () {
+          if ($(window).scrollTop() == 0) {
+              $('.menu').hide();
+              $('.msg').fadeIn(200);
+              $('.welcome').animate({
+                  height: "220px"
+              }, 300);
+              shown = false;
+          } else if ($(window).scrollTop() > 0 && !shown) {
+              $('.menu').fadeIn(200);
+              $('.msg').hide();
+              $('.welcome').animate({
+                  height: "50px"
+              }, 300);
+              shown = true;
+          }
+      });
+    </script>
     </html>
 `;
 
@@ -61,11 +119,21 @@ const getInfoList= (req, res) => {
     var infoType = req.param('info_type');
     Information.find({infoType: infoType}).exec()
     .then((info) =>{
+      if (info.length > 0){
         var htmlBody = `
         <body>
-          <div class="container mt-4">
-            <h1 class="text-center mb-4">Best Madagascar Beaches</h1>
-              <div class="row">`;
+          <div class="welcome stick card card-cover text-white bg-dark shadow-lg" style="background-image: url('image/unsplash-photo-2.jpg');">
+            <!-- <h1 class="text-center">Best Madagascar Beaches</h1> -->
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <span class="msg">
+                  <h2 class="text-center">Some random text<br/> or image or anything<br/> to welcome user.</h2>
+              </span>
+            </div>
+          </div>
+          <div class="content container mt-230"`;
+        
+        
+        htmlBody += `<div class="row">`;
         for (let i = 0; i < info.length; i ++){
               htmlBody += `
                   <div class="col-md-6">
@@ -73,20 +141,20 @@ const getInfoList= (req, res) => {
                       <img class="beach-image" src="` + info[i].mainImage +`" alt="` + info[i].title + `">
                       <div class="beach-name">` + info[i].title + `</div>
                       <div class="beach-location">` + info[i].location + `</div>
-                    <div class="beach-description">`
-                     + info[i].shortDescription +
-                  `</div>
-                </div>
-              </div>
-                `;
+                      <div class="beach-description">` + info[i].shortDescription + `</div>
+                      <a href="http://192.168.43.52:4000/info-detail?id=` + (info[i]._id).toString() + `">See more</a>
+                    </div>
+                  </div>`;
         }
         htmlBody += `
             </div>
-
           </div>
         </body>
         `;
         res.status(200).send(htmlheader + htmlBody + htmlFooter);
+      }else{
+        res.status(404).send("<h1>No data found</h1>");
+      }
     })
     .catch((err) => {
         console.log(err);
@@ -94,4 +162,10 @@ const getInfoList= (req, res) => {
     });
 }
 
-module.exports = { getInfoList }
+// get detail
+const getDetail = (req, res) => {
+    var infoId = req.param('id');
+    res.status(200).send(infoId);
+}
+
+module.exports = { getInfoList, getDetail }
