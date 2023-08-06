@@ -1,0 +1,687 @@
+{
+  "hotels": [
+    {
+      "id": "1",
+      "name": "Hotel ABC",
+      "location": "City A",
+      "rating": 4.5,
+      "price": "$150",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_abc.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Hotel XYZ",
+      "location": "City B",
+      "rating": 4.2,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_xyz.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Hotel PQR",
+      "location": "City C",
+      "rating": 4.0,
+      "price": "$90",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_pqr.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Hotel LMN",
+      "location": "City D",
+      "rating": 4.8,
+      "price": "$200",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_lmn.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Hotel EFG",
+      "location": "City E",
+      "rating": 3.9,
+      "price": "$100",
+      "amenities": [
+        "Free Wi-Fi",
+        "Business Center",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_efg.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Hotel HIJ",
+      "location": "City F",
+      "rating": 4.1,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Breakfast",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_hij.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Hotel KLM",
+      "location": "City G",
+      "rating": 3.7,
+      "price": "$80",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_klm.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Hotel NOP",
+      "location": "City H",
+      "rating": 4.3,
+      "price": "$140",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_nop.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Hotel QRS",
+      "location": "City I",
+      "rating": 4.6,
+      "price": "$180",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Concierge"
+      ],
+      "image": "https://example.com/hotel_qrs.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Hotel TUV",
+      "location": "City J",
+      "rating": 4.4,
+      "price": "$160",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_tuv.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Hotel WXY",
+      "location": "City K",
+      "rating": 3.8,
+      "price": "$110",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_wxy.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Hotel ZAB",
+      "location": "City L",
+      "rating": 4.2,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_zab.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Hotel CDE",
+      "location": "City M",
+      "rating": 4.1,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_cde.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Hotel FGH",
+      "location": "City N",
+      "rating": 4.9,
+      "price": "$220",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_fgh.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Hotel IJK",
+      "location": "City O",
+      "rating": 3.6,
+      "price": "$90",
+      "amenities": [
+        "Free Wi-Fi",
+        "Business Center",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_ijk.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Hotel MNO",
+      "location": "City P",
+      "rating": 4.3,
+      "price": "$140",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Breakfast",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_mno.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Hotel QRS",
+      "location": "City Q",
+      "rating": 3.7,
+      "price": "$80",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_qrs.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Hotel TUV",
+      "location": "City R",
+      "rating": 4.6,
+      "price": "$180",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_tuv.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Hotel WXY",
+      "location": "City S",
+      "rating": 4.4,
+      "price": "$160",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_wxy.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Hotel ZAB",
+      "location": "City T",
+      "rating": 3.8,
+      "price": "$110",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_zab.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Hotel CDE",
+      "location": "City U",
+      "rating": 4.2,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_cde.jpg"
+    },
+    {
+      "id": "22",
+      "name": "Hotel FGH",
+      "location": "City V",
+      "rating": 4.1,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_fgh.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Hotel IJK",
+      "location": "City W",
+      "rating": 4.9,
+      "price": "$220",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_ijk.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Hotel MNO",
+      "location": "City X",
+      "rating": 3.6,
+      "price": "$90",
+      "amenities": [
+        "Free Wi-Fi",
+        "Business Center",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_mno.jpg"
+    },
+    {
+      "id": "25",
+      "name": "Hotel PQR",
+      "location": "City Y",
+      "rating": 4.3,
+      "price": "$140",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Breakfast",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_pqr.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Hotel ABC",
+      "location": "City Z",
+      "rating": 3.7,
+      "price": "$80",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_abc.jpg"
+    },
+    {
+      "id": "27",
+      "name": "Hotel XYZ",
+      "location": "City A1",
+      "rating": 4.6,
+      "price": "$180",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_xyz.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Hotel PQR",
+      "location": "City B1",
+      "rating": 4.4,
+      "price": "$160",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_pqr.jpg"
+    },
+    {
+      "id": "29",
+      "name": "Hotel LMN",
+      "location": "City C1",
+      "rating": 3.8,
+      "price": "$110",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_lmn.jpg"
+    },
+    {
+      "id": "30",
+      "name": "Hotel EFG",
+      "location": "City D1",
+      "rating": 4.2,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_efg.jpg"
+    },
+    {
+      "id": "31",
+      "name": "Hotel HIJ",
+      "location": "City E1",
+      "rating": 4.1,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_hij.jpg"
+    },
+    {
+      "id": "32",
+      "name": "Hotel KLM",
+      "location": "City F1",
+      "rating": 4.9,
+      "price": "$220",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_klm.jpg"
+    },
+    {
+      "id": "33",
+      "name": "Hotel NOP",
+      "location": "City G1",
+      "rating": 3.6,
+      "price": "$90",
+      "amenities": [
+        "Free Wi-Fi",
+        "Business Center",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_nop.jpg"
+    },
+    {
+      "id": "34",
+      "name": "Hotel QRS",
+      "location": "City H1",
+      "rating": 4.3,
+      "price": "$140",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Breakfast",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_qrs.jpg"
+    },
+    {
+      "id": "35",
+      "name": "Hotel TUV",
+      "location": "City I1",
+      "rating": 3.7,
+      "price": "$80",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_tuv.jpg"
+    },
+    {
+      "id": "36",
+      "name": "Hotel WXY",
+      "location": "City J1",
+      "rating": 4.6,
+      "price": "$180",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_wxy.jpg"
+    },
+    {
+      "id": "37",
+      "name": "Hotel ZAB",
+      "location": "City K1",
+      "rating": 4.4,
+      "price": "$160",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_zab.jpg"
+    },
+    {
+      "id": "38",
+      "name": "Hotel CDE",
+      "location": "City L1",
+      "rating": 3.8,
+      "price": "$110",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_cde.jpg"
+    },
+    {
+      "id": "39",
+      "name": "Hotel FGH",
+      "location": "City M1",
+      "rating": 4.2,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_fgh.jpg"
+    },
+    {
+      "id": "40",
+      "name": "Hotel IJK",
+      "location": "City N1",
+      "rating": 4.1,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_ijk.jpg"
+    },
+    {
+      "id": "41",
+      "name": "Hotel MNO",
+      "location": "City O1",
+      "rating": 4.9,
+      "price": "$220",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_mno.jpg"
+    },
+    {
+      "id": "42",
+      "name": "Hotel PQR",
+      "location": "City P1",
+      "rating": 3.6,
+      "price": "$90",
+      "amenities": [
+        "Free Wi-Fi",
+        "Business Center",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_pqr.jpg"
+    },
+    {
+      "id": "43",
+      "name": "Hotel ABC",
+      "location": "City Q1",
+      "rating": 4.3,
+      "price": "$140",
+      "amenities": [
+        "Free Wi-Fi",
+        "Spa",
+        "Breakfast",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_abc.jpg"
+    },
+    {
+      "id": "44",
+      "name": "Hotel XYZ",
+      "location": "City R1",
+      "rating": 3.7,
+      "price": "$80",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_xyz.jpg"
+    },
+    {
+      "id": "45",
+      "name": "Hotel PQR",
+      "location": "City S1",
+      "rating": 4.6,
+      "price": "$180",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_pqr.jpg"
+    },
+    {
+      "id": "46",
+      "name": "Hotel LMN",
+      "location": "City T1",
+      "rating": 4.4,
+      "price": "$160",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Bar",
+        "Room Service"
+      ],
+      "image": "https://example.com/hotel_lmn.jpg"
+    },
+    {
+      "id": "47",
+      "name": "Hotel EFG",
+      "location": "City U1",
+      "rating": 3.8,
+      "price": "$110",
+      "amenities": [
+        "Free Wi-Fi",
+        "Swimming Pool",
+        "Gym",
+        "Restaurant"
+      ],
+      "image": "https://example.com/hotel_efg.jpg"
+    },
+    {
+      "id": "48",
+      "name": "Hotel HIJ",
+      "location": "City V1",
+      "rating": 4.2,
+      "price": "$130",
+      "amenities": [
+        "Free Wi-Fi",
+        "Parking",
+        "Spa",
+        "Bar"
+      ],
+      "image": "https://example.com/hotel_hij.jpg"
+    },
+    {
+      "id": "49",
+      "name": "Hotel KLM",
+      "location": "City W1",
+      "rating": 4.1,
+      "price": "$120",
+      "amenities": [
+        "Free Wi-Fi",
+        "Fitness Center",
+        "Lounge"
+      ],
+      "image": "https://example.com/hotel_klm.jpg"
+    },
+    {
+      "id": "50",
+      "name": "Hotel NOP",
+      "location": "City X1",
+      "rating": 4.9,
+      "price": "$220",
+      "amenities": [
+        "Free Wi-Fi",
+        "Poolside Bar",
+        "Concierge",
+        "Laundry"
+      ],
+      "image": "https://example.com/hotel_nop.jpg"
+    }
+  ]
+}

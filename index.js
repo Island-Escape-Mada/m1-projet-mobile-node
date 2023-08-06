@@ -12,6 +12,7 @@ const authRoutes = require("./routes/auth");
 const aboutmadaRouter = require("./routes/aboutmada");
 const infolist = require("./routes/infolist");
 const settingsRoute = require("./routes/settings");
+const hotelsRoute = require("./routes/hotels");
 
 const cors = require("cors");
 app.use(cors());
@@ -53,6 +54,7 @@ db.mongoose
 // routes
 app.use("/api/auth", authRoutes);
 app.use("/api/settings", settingsRoute);
+app.use("/api/hotels", hotelsRoute);
 app.use(aboutmadaRouter);
 app.use(infolist);
 
