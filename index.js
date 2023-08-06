@@ -11,6 +11,8 @@ const dbConfig = require("./configs/db.config");
 const authRoutes = require("./routes/auth");
 const aboutmadaRouter = require("./routes/aboutmada");
 const infolist = require("./routes/infolist");
+const settingsRoute = require("./routes/settings");
+
 const cors = require("cors");
 app.use(cors());
 
@@ -34,6 +36,7 @@ app.all("/*", function (req, res, next) {
 
 const mongoString = process.env.DATABASE_URL || dbConfig.CONNECTION;
 const db = require("./models");
+
 db.mongoose
 	.connect(mongoString, {
 		useNewUrlParser: true,
@@ -49,6 +52,7 @@ db.mongoose
 
 // routes
 app.use("/api/auth", authRoutes);
+app.use("/api/settings", settingsRoute);
 app.use(aboutmadaRouter);
 app.use(infolist);
 
