@@ -6,13 +6,17 @@ const getNotification = async (req, res) => {
     try{
         const notification = await Notification.find({});
 
+        var returnValue = null;
+        var status = 200;
         if (notification.length > 0){
-            res.status(200).send(notification[0]);
+            returnValue = notification[0];
         }else{
-            res.status(404).send("No notification found.");
+            returnValue = "No notification found."
+            status = 404;
         }
+        res.status(status).send(returnValue);
     }catch(error){
-        res.status(500).send("Error getting notification.");
+        console.log(error);
     }
 }
 
