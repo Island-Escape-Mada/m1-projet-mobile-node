@@ -164,49 +164,50 @@ var detailHeader = globalHeader + `
       .welcome {
 
         height:220px;
-
+  
         width:100%;
-
+  
         background-color:rgba(255, 255, 0, 0.3);
-
+  
       }
-
+  
       .content {
-
+  
         margin-top:230px;
         height:800px;
-
+  
       }
-
+  
       .stick {
-
+  
         position:fixed;
-
+  
         top:0px;
-
+  
       }
-
+  
       .video-wrapper {
         position: relative;
         width: 400px;
         height: 200px;
-
+  
         overflow: hidden;
         text-align: center;
         display: flex;
         align-items: center;
         justify-centent: center;
       }
-
-      video {
+  
+      .video {
         object-fit: cover;
         height: 100%;
         width: 100%;
-
+  
         position: absolute;
         top: 0;
         left: 0;
       }
+    
       .text-overlay {
         position: absolute;
         top: 50%;
@@ -216,6 +217,7 @@ var detailHeader = globalHeader + `
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 10px 20px;
+    }
     </style>
 `+ "</head>";
 
