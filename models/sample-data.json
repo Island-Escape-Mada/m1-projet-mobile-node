@@ -126,6 +126,22 @@
     "shortDescription": "A church with history has relation with the city of Antsirabe and Norway"
 }
 
+{
+    "infoType": "hospitality",
+    "mainImage": "andilana.jpg",
+    "title": "Andilana beach ressort",
+    "location": "Nosy Be",
+    "shortDescription": "A beautiful ressort that reflect a true tropical vibe"
+}
+
+{
+    "infoType": "hospitality",
+    "mainImage": "radisson.jpeg",
+    "title": "Radisson Blu",
+    "location": "Antananarivo",
+    "shortDescription": "Want to stay in the capital city? Don't worry, Radisson Blu will give you satisfaction"
+}
+
 { "Info type": "Info detail" }
 
 {
