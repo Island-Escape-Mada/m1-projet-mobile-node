@@ -94,6 +94,22 @@
     "shortDescription": "Enjoy your holiday in this sunny place"
 }
 
+{
+    "infoType": "natural",
+    "mainImage": "ranomafana.jpeg",
+    "title": "Ranomafana National Park",
+    "location": "Fianarantsoa",
+    "shortDescription": "Take a deep breath at Ranomafana"
+}
+
+{
+    "infoType": "natural",
+    "mainImage": "andasibe.jpeg",
+    "title": "Andasibe National Park",
+    "location": "Moramanga",
+    "shortDescription": "Enjoy nature and endemic plants in this beautiful park"
+}
+
 { "Info type": "Info detail" }
 
 {
@@ -134,10 +150,10 @@
 
 {
     "mediaType": "image",
-    "mediaPath": "madagascar.png",
+    "mediaPath": "antsanatia.png",
     "mediaDescription": "header_image",
     "information": {
-        "$oid": "64caa52a9ce89021e51c4d57"
+        "$oid": "64d0bc8279d13f2a2af41709"
       },
     "__v": 0
 }
@@ -147,7 +163,7 @@
     "mediaPath": "madagascar.mp4",
     "mediaDescription": "header_video",
     "information": {
-        "$oid": "64caa52a9ce89021e51c4d57"
+        "$oid": "64d0bc8279d13f2a2af41709"
       },
     "__v": 0
 }
