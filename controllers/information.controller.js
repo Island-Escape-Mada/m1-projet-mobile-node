@@ -312,7 +312,7 @@ const getDetail = async (req, res) => {
       if (infoMediaVideoHeader.length == 0 && infoMediaImageHeader.length > 0){
         htmlBody += `
           <div class="welcome stick card card-cover text-white bg-dark shadow-lg">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 video-wrapper">
                 <div class="msg">
                     <img class="video" src="` + url + "image/" + infoMediaImageHeader[0].mediaPath +`">
                     <h2 class="text-overlay">` + infoName[0].infoValue + `</h2>

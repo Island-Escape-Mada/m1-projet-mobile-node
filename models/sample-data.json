@@ -186,6 +186,47 @@
     "__v": 0
 }
 
+{
+    "infoType": "Name",
+    "infoValue": "Ranomafana",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
+      },
+    "__v": 0
+}
+{
+    "infoType": "Location",
+    "infoValue": "Vatovavy Fitovinany",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
+      },
+    "__v": 0
+}
+{
+    "infoType": "description",
+    "infoValue": "Ranomafana is one of the best national park in Madagascar. It is also one of the biggest rainforest reserve in the island where you can find endemic animals and plants breed.",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
+      },
+    "__v": 0
+}
+{
+    "infoType": "Managed by",
+    "infoValue": "Madagascar National Park",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
+      },
+    "__v": 0
+}
+{
+    "infoType": "Road state",
+    "infoValue": "Very Good",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
+      },
+    "__v": 0
+}
+
 { "Info type": "Info media" }
 
 {
@@ -244,6 +285,16 @@
     "mediaDescription": "gallery",
     "information": {
         "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "image",
+    "mediaPath": "ranomafana.jpg",
+    "mediaDescription": "header_image",
+    "information": {
+        "$oid": "64d0ee9779d13f2a2af41738"
       },
     "__v": 0
 }
