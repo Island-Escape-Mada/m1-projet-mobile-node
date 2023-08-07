@@ -110,6 +110,22 @@
     "shortDescription": "Enjoy nature and endemic plants in this beautiful park"
 }
 
+{
+    "infoType": "historical",
+    "mainImage": "rova.jpg",
+    "title": "Rovan'i Manjakamiadana",
+    "location": "Antananarivo",
+    "shortDescription": "An important symbol of the Malagasy Royals"
+}
+
+{
+    "infoType": "historical",
+    "mainImage": "flmaa.jpg",
+    "title": "Fiangonana Loterana Malagasy Antsirabe Antampontanana",
+    "location": "Antsirabe",
+    "shortDescription": "A church with history has relation with the city of Antsirabe and Norway"
+}
+
 { "Info type": "Info detail" }
 
 {
