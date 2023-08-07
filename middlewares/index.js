@@ -1,5 +1,5 @@
-const checkAuth = require("./authCheck");
+const checkToken = require("./authCheck");
 
 module.exports = {
-    checkAuth
+    checkToken
 }
