@@ -249,54 +249,6 @@ const getInfoList= async (req, res) => {
       console.log(error);
       res.status(500).send({message: error});
     }
-    
-    
-
-    // Information.find({infoType: infoType}).exec()
-    // .then((info) =>{
-    //   var htmlBody = "";
-    //   if (info.length > 0){
-    //     htmlBody += `
-    //     <body>
-    //       <div class="welcome stick card card-cover text-white bg-dark shadow-lg" style="background-image: url('` + url + "image/unsplash-photo-2.jpg" + `"');">
-    //         <!-- <h1 class="text-center">Best Madagascar Beaches</h1> -->
-    //         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-    //           <span class="msg">
-    //               <h2 class="text-center">Some random text<br/> or image or anything<br/> to welcome user.</h2>
-    //           </span>
-    //         </div>
-    //       </div>
-    //       <div class="content container mt-230">`;
-        
-        
-    //     htmlBody += `<div class="row">`;
-    //     for (let i = 0; i < info.length; i ++){
-    //           htmlBody += `
-    //               <div class="col-md-6">
-    //                 <div class="beach-card">
-    //                   <img class="beach-image" src="` + url + "image/" + info[i].mainImage +`" alt="` + info[i].title + `">
-    //                   <div class="beach-name">` + info[i].title + `</div>
-    //                   <div class="beach-location">` + info[i].location + `</div>
-    //                   <div class="beach-description">` + info[i].shortDescription + `</div>
-    //                   <a href="` + url + `info-detail?id=` + (info[i]._id).toString() + `">See more</a>
-    //                 </div>
-    //               </div>`;
-    //     }
-    //     htmlBody += `
-    //         </div>
-    //       </div>
-    //     </body>
-    //     `;
-    //     res.status(200).send(listHeader + htmlBody + listFooter);
-    //   }else{
-    //     htmlBody = `<h1>No data found</h1>`;
-    //     res.status(404).send(listHeader + htmlBody + listFooter);
-    //   }
-    // })
-    // .catch((err) => {
-    //     console.log(err);
-    //     res.status(500).send({message: err});
-    // });
 }
 
 // get detail
