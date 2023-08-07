@@ -7,6 +7,10 @@ db.mongoose = mongoose;
 
 db.User = require("./user");
 db.BasicInfo = require("./basic.info.model");
-db.Information = require("./information.model")
+db.Information = require("./information.model");
+db.InformationDetail = require('./informationdetail.model');
+db.InformationMedia = require('./informationmedia.model');
+db.ParentInformation = require('./parentinformation.model');
+db.Notification = require('./notitfication.model');
 
 module.exports = db;

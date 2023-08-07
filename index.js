@@ -11,6 +11,7 @@ const dbConfig = require("./configs/db.config");
 const authRoutes = require("./routes/auth");
 const aboutmadaRouter = require("./routes/aboutmada");
 const infolist = require("./routes/infolist");
+const notification = require("./routes/notification");
 const cors = require("cors");
 app.use(cors());
 
@@ -47,10 +48,14 @@ db.mongoose
     process.exit();
   });
 
+// static files
+app.use(express.static('public'));
+
 // routes
-app.use("/api/auth", authRoutes);
+app.use("/auth/", authRoutes);
 app.use(aboutmadaRouter);
 app.use(infolist);
+app.use(notification);
 
 const port = process.env.PORT || 4000; 
 app.listen(port, () => {

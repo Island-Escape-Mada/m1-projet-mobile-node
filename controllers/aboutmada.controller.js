@@ -70,7 +70,6 @@ const getAboutMadaInfo = (req, res) => {
                             <div class="card">`
                 htmlBody += "<h2>" + info[i].title + "</h2>";
                 htmlBody += `<p class="info">` + info[i].value + `</p>
-                    <button class="btn btn-primary">Test</button>
                         </div>
                     </div>
                     </div>

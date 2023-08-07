@@ -31,11 +31,40 @@
     "rank": 0
 }
 
+{ "Info type": "Parent info" }
+{
+    "infoType": "beach",
+    "mainImage": "madagascar.png",
+    "shortDescription": "The island of Madagascar seen from its beautiful beaches."
+}
+{
+    "infoType": "historical",
+    "mainImage": "madagascar.png",
+    "shortDescription": "Rediscover some of Madagacascar's most valuable places."
+}
+{
+    "infoType": "hospitality",
+    "mainImage": "madagascar.png",
+    "shortDescription": "Live a unique holidays in Madagascar."
+}
+{
+    "infoType": "news",
+    "mainImage": "madagascar.png",
+    "shortDescription": "Be aware of any recent trends of Malagasy tourism."
+}
+{
+    "infoType": "natural",
+    "mainImage": "madagascar.png",
+    "shortDescription": "Madagascar has the most beautiful natural reserve ever!"
+}
+
+
+
 { "Info type": "Basic info" }
 
 {
     "infoType": "beach",
-    "mainImage": "Image1.png",
+    "mainImage": "madagascar.png",
     "title": "Antsanitia",
     "location": "Antsiranana",
     "shortDescription": "Take away your stress at Antsanitia Beach"
@@ -43,7 +72,7 @@
 
 {
     "infoType": "beach",
-    "mainImage": "Image2.png",
+    "mainImage": "madagascar.png",
     "title": "Grand Pavoi",
     "location": "Mahajanga",
     "shortDescription": "Enjoy your holiday in this sunny place"
@@ -51,7 +80,7 @@
 
 {
     "infoType": "beach",
-    "mainImage": "Image3.png",
+    "mainImage": "madagascar.png",
     "title": "Foulpoint",
     "location": "Toamasina",
     "shortDescription": "Enjoy your holiday in this sunny place"
@@ -59,8 +88,115 @@
 
 {
     "infoType": "beach",
-    "mainImage": "Image4.png",
+    "mainImage": "madagascar.png",
     "title": "Ambilalemaitso",
     "location": "Ambila",
     "shortDescription": "Enjoy your holiday in this sunny place"
+}
+
+{ "Info type": "Info detail" }
+
+{
+    "infoType": "Name",
+    "infoValue": "Antsanitia",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+{
+    "infoType": "Location",
+    "infoValue": "Antsiranana",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+{
+    "infoType": "description",
+    "infoValue": "Located in the northernmost of Madagascar, Antsanitia beach will give you 
+                an unforgetable holiday.",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+{
+    "infoType": "Daily visitors",
+    "infoValue": "300",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{ "Info type": "Info media" }
+
+{
+    "mediaType": "image",
+    "mediaPath": "madagascar.png",
+    "mediaDescription": "header_image",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "video",
+    "mediaPath": "madagascar.mp4",
+    "mediaDescription": "header_video",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "image",
+    "mediaPath": "madagascar.png",
+    "mediaDescription": "gallery",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "image",
+    "mediaPath": "madagascar.png",
+    "mediaDescription": "gallery",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "image",
+    "mediaPath": "madagascar.png",
+    "mediaDescription": "gallery",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{
+    "mediaType": "image",
+    "mediaPath": "madagascar.png",
+    "mediaDescription": "gallery",
+    "information": {
+        "$oid": "64caa52a9ce89021e51c4d57"
+      },
+    "__v": 0
+}
+
+{ "Info type": "Notification" }
+
+{
+    "notificationTitle": "New content",
+    "notificationText": "Check the latest update on Antsanatia beach",
+    "activityClassName": "CoastActivity",
+    "apiLink": "info-detail?id=64caa52a9ce89021e51c4d57"
 }
