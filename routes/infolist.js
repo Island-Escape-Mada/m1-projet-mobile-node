@@ -4,6 +4,6 @@ const controllerInfoList = require('../controllers/information.controller');
 const { checkToken } = require('../middlewares');
 
 router.get('/list-info', [checkToken.authenticateToken], controllerInfoList.getInfoList);
-router.get('/info-detail', [checkToken.authenticateToken], controllerInfoList.getDetail);
+router.get('/info-detail', [], controllerInfoList.getDetail);
 
 module.exports = router;
