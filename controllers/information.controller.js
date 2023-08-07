@@ -84,6 +84,39 @@ var listHeader = globalHeader + `
       top:0px;
 
     }
+
+    .video-wrapper {
+      position: relative;
+      width: 400px;
+      height: 200px;
+
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-centent: center;
+    }
+
+    .video {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      // right: 50%; 
+      transform: translate(-50%, -50%);
+      color: white;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+  }
   </style>
 ` + "</head>";
 
@@ -174,6 +207,15 @@ var detailHeader = globalHeader + `
         top: 0;
         left: 0;
       }
+      .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        // right: 50%; 
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px 20px;
     </style>
 `+ "</head>";
 
@@ -208,15 +250,15 @@ const getInfoList= async (req, res) => {
     try{
       const information = await Information.find({infoType: infoType});
       const parentInformation = await ParentInformation.find({infoType: infoType});
-      
+      // style="background-image: url('` + url + "image/" + parentInformation[0].mainImage + `"');"
       htmlBody += `
             <body>
-              <div class="welcome stick card card-cover text-white bg-dark shadow-lg" style="background-image: url('` + url + "image/" + parentInformation[0].mainImage + `"');">
-                <!-- <h1 class="text-center">Best Madagascar Beaches</h1> -->
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <span class="msg">
-                      <h2 class="text-center">` + parentInformation[0].shortDescription + `</h2>
-                  </span>
+              <div class="welcome stick card card-cover text-white bg-dark shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 video-wrapper">
+                  <div class="msg">
+                    <img class="video" src="` + url + "image/" + parentInformation[0].mainImage +`">
+                    <h2 class="text-overlay">` + parentInformation[0].shortDescription + `</h2>
+                  </div>
                 </div>
               </div>
               <div class="content container mt-230">
@@ -269,11 +311,12 @@ const getDetail = async (req, res) => {
         <body>`;
       if (infoMediaVideoHeader.length == 0 && infoMediaImageHeader.length > 0){
         htmlBody += `
-          <div class="welcome stick card card-cover text-white bg-dark shadow-lg" style="background-image: url('` + url + "image/" + infoMediaImageHeader[0].mediaPath + `"');">
+          <div class="welcome stick card card-cover text-white bg-dark shadow-lg">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <span class="msg">
-                <h2 class="text-center">` + infoName[0].infoValue + `</h2>
-              </span>
+                <div class="msg">
+                    <img class="video" src="` + url + "image/" + infoMediaImageHeader[0].mediaPath +`">
+                    <h2 class="text-overlay">` + infoName[0].infoValue + `</h2>
+                </div>
             </div>
           </div>
         `;
@@ -283,7 +326,7 @@ const getDetail = async (req, res) => {
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 video-wrapper">
             <span class="msg">
               <video playsinline autoplay muted>
-                <source src="video/madagascar4k.mp4" type="video/mp4">
+                <source src="` + url + "video/" + infoMediaVideoHeader[0].mediaPath +`" type="video/mp4">
                 Video not supported
               </video>
               <h2 class="text-center">` + infoName[0].infoValue + `</h2>
