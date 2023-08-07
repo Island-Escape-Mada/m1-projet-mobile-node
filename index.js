@@ -13,6 +13,7 @@ const aboutmadaRouter = require("./routes/aboutmada");
 const infolist = require("./routes/infolist");
 const settingsRoute = require("./routes/settings");
 const hotelsRoute = require("./routes/hotels");
+const notification = require("./routes/notification");
 
 const cors = require("cors");
 app.use(cors());
